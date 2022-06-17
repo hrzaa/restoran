@@ -2,7 +2,7 @@
 // memanggil file koneksi.php untuk melakukan koneksi database
 include '../../config.php';
 
-	// membuat variabel untuk menampung data dari form
+	// membuat variabel untuk menampung data dari form input
   $id = $_POST['id'];
 
   // var_dump($id);
