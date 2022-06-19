@@ -195,41 +195,13 @@
                 </div>
                 <div class="price-wrapper d-flex justify-content-between">
                   <h3 class="price">Rp.<?= $product['harga']; ?></h3>
-                  <a href="#" class="btn position-absolute bottom-0 end-0 d-flex justify-content-center align-items-center p-3"><i class="bx bx-shopping-bag"></i></a>
+                  <a href="detail-product.php?id=<?= $product['id_product']; ?>" class="btn position-absolute bottom-0 end-0 d-flex justify-content-center align-items-center p-3"><i class="bx bx-shopping-bag"></i></a>
                 </div>
               </div>
             </div>
           </div>
           <?php } ?>
           
-          <!-- <?php 
-           $no = 0;
-           $sql = "SELECT * FROM product";
-           $query = mysqli_query($conn, $sql);
-              while($product = mysqli_fetch_array($query)){
-              $no++;
-          ?>  
-
-          <div class="col-lg-3 col-md-6 my-3">
-            <div class="card m-auto new-card" style="width: 17rem">
-              <div class="img-box d-flex justify-content-center align-items-center py-3">
-              <img src="assets/images/<?= $product['foto']; ?>" width="150" alt="">
-              </div>
-              <div class="card-body position-relative">
-                <p class="label"> <?= $product['tgl_input']; ?></p>
-                <h5 class="card-title">  <?= $product['nama_product']; ?></h5>
-                <div class="rate d-flex">
-                  <div class="star">
-
-                  </div>
-                  <?= $product['keterangan']; ?>
-                </div>
-                <div class="price-wrapper d-flex justify-content-between">
-                  <h3 class="price">Rp.<?= $product['harga']; ?></h3>
-                  <a href="modal" class="btn position-absolute bottom-0 end-0 d-flex justify-content-center align-items-center p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-shopping-bag"></i></a>
-
-                  <?php } ?> -->
-
 
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

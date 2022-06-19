@@ -25,7 +25,7 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="Assets/css/style.css" />
 
-    <title>Nabiil Resto</title>
+    <title>Nabiil Resto - <?= $page; ?></title>
   </head>
 
   <body>
