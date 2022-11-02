@@ -2,10 +2,10 @@
 // memanggil file koneksi.php untuk melakukan koneksi database
 include '../../config.php';
 
-	// membuat variabel untuk menampung data dari form input
-  $id = $_POST['id'];
+// membuat variabel untuk menampung data dari form input
+$id = $_POST['id'];
 
-  // var_dump($id);
+// var_dump($id);
   $kode_product  = $_POST['kode_product'];
   $date         = $_POST['date'];
   $nama_product = $_POST['nama_product'];
@@ -25,7 +25,7 @@ include '../../config.php';
                       
                     // jalankan query UPDATE berdasarkan ID yang produknya kita edit
                    $query  = "UPDATE product SET kode_product = '$kode_product', tgl_input = '$date', nama_product = '$nama_product', harga = '$harga_product', keterangan = '$keterangan', foto = '$nama_gambar_baru'";
-                    $query .= "WHERE id = '$id'";
+                    $query .= "WHERE id_product = '$id'";
                     $result = mysqli_query($conn, $query);
                     // periska query apakah ada error
                     if(!$result){
@@ -55,6 +55,3 @@ include '../../config.php';
           echo "<script>alert('Data berhasil diubah.');window.location='product.php';</script>";
       }
     }
-
- 
-
